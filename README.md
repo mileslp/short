@@ -2,7 +2,7 @@
 
 **Introduction**: Use Cloudflare Pages to create Shortener of URL
 
-**My Demo**  : [https://d.igdu.xyz/](https://d.igdu.xyz/);
+**My Demo**  : [https://shortlink.chat/](https://shortlink.chat/);
 
 **Original author's Demo** : [https://d.131213.xyz/](https://d.131213.xyz/)
 
@@ -67,10 +67,10 @@ Setting->->Function->->D1 database bindings->->Edit bingds->->Variable name, You
 
 ```bash
 # POST /create
-curl -X POST -H "Content-Type: application/json" -d '{"url":"https://igdu.xyz"}' https://d.igdu.xyz/create
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://shortlink.chat"}' https://shortlink.chat/create
 
 # Dedicated slug
-curl -X POST -H "Content-Type: application/json" -d '{"url":"https://igdu.xyz","slug":"scxs"}' https://d.igdu.xyz/create
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://shortlink.chat","slug":"scxs"}' https://shortlink.chat/create
 
 ```
 
@@ -80,6 +80,6 @@ curl -X POST -H "Content-Type: application/json" -d '{"url":"https://igdu.xyz","
 ```json
 {
   "slug": "<slug>",
-  "link": "http://d.igdu.xyz/<slug>"
+  "link": "https://shortlink.chat/<slug>"
 }
 ```
