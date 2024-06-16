@@ -211,7 +211,7 @@
         <summary>Custom Set</summary>
         <div>
           <input placeholder="slug" x-model="slug" />
-          <small>Slug is random id.</small>
+          <small>random id</small>
         </div>
       </details>
       <button :class="{ loading }" :disabled="loading || isValidated()" @click="submit($refs, $nextTick)">Shorten</button>
@@ -232,7 +232,7 @@
     }
       const app = {
         url: '',
-        slug: generateMixed(4),
+        slug: generateMixed(5),
         alert: null,
         loading: false,
         isValidated () {
